@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+	<!-- 配置别名,使用批量扫描别名的方式 -->
+	<typeAliases>
+		<package name="com.seven.model"/>
+	</typeAliases>
+	
+	<!-- 使用自动扫描，如果mapper.xml和mapper.java在同一个路径下，且同名，
+		mappers就不用配置 -->
+	<mappers>
+		<package name="com.seven.mapper" />
+	</mappers>
+</configuration>
+
